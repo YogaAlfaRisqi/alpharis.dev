@@ -1,0 +1,65 @@
+---
+export interface Props {
+  name?: string;
+  title?: string;
+  description?: string;
+  imageUrl?: string;
+  contactLink?: string;
+}
+
+const {
+  name = "Yoga Alfa Risqi",
+  title = "A Full-stack Developer",
+  description = "I am a Full-Stack Developer with a passion for delivering exceptional results. With my expertise in React and NextJS on the frontend, and PHP, CodeIgniter, NodeJS, and Express on the backend, I bring a unique combination of technical skills and creative problem-solving to every project I work on.",
+  imageUrl = "public/pp.jpg",
+  contactLink = "#contact",
+} = Astro.props;
+---
+
+<section class="relative py-30 md:py-40 px-4 ">
+  <div class=" mx-auto max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Left: Text Content -->
+    <div class="text-center lg:text-left">
+      <p class="text-emerald-500 text-lg font-medium mb-2">Hi my name is</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-2">
+        {name}
+      </h1>
+      <h2 class="text-2xl md:text-3xl font-semibold text-emerald-600 mb-4">
+        {title}
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+        {description}
+      </p>
+      <a
+        href={contactLink}
+        class="inline-flex items-center px-6 py-3 bg-emerald-500 text-white font-medium rounded-md shadow hover:bg-emerald-600 transition-all duration-300"
+      >
+        Contact me!
+      </a>
+    </div>
+
+    <!-- Right: Hero Image -->
+    <div class="hidden md:flex justify-center lg:justify-end">
+      <img
+        src={imageUrl}
+        alt="Yoga Alfa Risqi"
+        class="w-72 md:w-96 xl:w-[28rem] h-100 object-contain"
+      />
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="mt-20 text-center">
+    <p class="text-sm text-gray-400 mb-1">Scroll</p>
+    <div class="text-gray-500 text-xl animate-bounce">
+      <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </div>
+  </div>
+</section>

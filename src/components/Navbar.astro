@@ -1,0 +1,29 @@
+---
+import { navLinks } from '../constants/navLinks.ts'; // ✅ HARUS di dalam blok ini
+---
+<header
+  class="fixed top-0 w-full backdrop-blur bg-white/70 dark:bg-gray-900/70 shadow-xs z-50"
+>
+  <nav
+    class="max-w-3xl md:max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-start items-center"
+  >
+    <a href="/" class="text-xl md:text-3xl font-medium tracking-tight">Yogaalr.dev</a>
+    <div class="flex-grow flex justify-end items-center space-x-4">
+      <ul class="hidden md:flex space-x-6">
+        {
+          navLinks.map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-blue-600 transition text-xl font-light">
+                {link.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="flex items-center space-x-3">
+        
+      </div>
+    </div>
+  </nav>
+</header>

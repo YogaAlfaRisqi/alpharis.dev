@@ -1,0 +1,28 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const { title = "Yogaalr — Web Developer", description = "Personal website & blog" } = Astro.props;
+---
+
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <Navbar />
+
+    <main class="min-h-screen max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 pt-28 pb-20">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html> 
+ 

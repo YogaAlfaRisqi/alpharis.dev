@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme {
+  --font-Sora: 'Sora', sans-serif;
+  --font-Inter: 'Inter', sans-serif;
+}
