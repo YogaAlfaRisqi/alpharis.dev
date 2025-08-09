@@ -1,17 +1,73 @@
+<div id="blog" class="min-h-170 w-full bg-gray-50 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <!-- Judul Halaman -->
+    <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">Artikel Blog</h1>
+    <p class="text-lg font-normal text-gray-900 mb-8 text-center">Artikel Blog</p>
 
-<div id="blog" class="min-h-screen w-full flex flex-col items-center justify-center">	
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2 class="font-bold">Contact</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
-</div>	
+    <!-- Grid Artikel -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <a href="https://astro.build/blog/astro-5/" 
+         class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-4">
+        
+        <div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full">
+          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="text-indigo-600">
+            <path
+              d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
+              fill="currentColor">
+            </path>
+          </svg>
+        </div>
 
+        <h2 class="text-xl font-bold text-gray-900">Contact</h2>
+        <p class="text-gray-600 text-sm">
+          From content layers to server islands, click to learn more about the new features and improvements in Astro 5.0.
+        </p>
+        <span class="mt-4 inline-block text-indigo-600 font-medium hover:underline">
+          Read more →
+        </span>
+      </a>
 
+      <!-- Card 2 -->
+      <a href="#" 
+         class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-4">
+        
+        <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full">
+          <svg width="24" height="24" fill="currentColor" class="text-green-600" viewBox="0 0 20 20">
+            <path d="M4 3a1 1 0 011-1h3v4H4V3zM9 2h6a1 1 0 011 1v3h-7V2zM4 8h7v4H4V8zm8 0h4a1 1 0 011 1v3h-5V8zM4 14h5v4H5a1 1 0 01-1-1v-3zm6 0h7v3a1 1 0 01-1 1h-6v-4z"/>
+          </svg>
+        </div>
+
+        <h2 class="text-xl font-bold text-gray-900">Tips Menulis Blog</h2>
+        <p class="text-gray-600 text-sm">
+          Panduan singkat untuk membuat blog yang menarik pembaca dengan desain dan konten yang efektif.
+        </p>
+        <span class="mt-4 inline-block text-green-600 font-medium hover:underline">
+          Baca selengkapnya →
+        </span>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="#" 
+         class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col gap-4">
+        
+        <div class="w-12 h-12 flex items-center justify-center bg-pink-100 rounded-full">
+          <svg width="24" height="24" fill="currentColor" class="text-pink-600" viewBox="0 0 20 20">
+            <path d="M10 2a6 6 0 016 6v4.586l1.707 1.707A1 1 0 0117 16H3a1 1 0 01-.707-1.707L4 12.586V8a6 6 0 016-6z"/>
+          </svg>
+        </div>
+
+        <h2 class="text-xl font-bold text-gray-900">Belajar Astro</h2>
+        <p class="text-gray-600 text-sm">
+          Kenalan dengan Astro, framework modern untuk membuat website cepat dengan konten statis dan dinamis.
+        </p>
+        <span class="mt-4 inline-block text-pink-600 font-medium hover:underline">
+          Mulai belajar →
+        </span>
+      </a>
+
+    </div>
+  </div>
+</div>
