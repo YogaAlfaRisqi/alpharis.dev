@@ -11,23 +11,23 @@ const {
   name = "Yoga Alfa Risqi",
   title = "A Full-stack Developer",
   description = "I am a Full-Stack Developer with a passion for delivering exceptional results. With my expertise in React and NextJS on the frontend, and PHP, CodeIgniter, NodeJS, and Express on the backend, I bring a unique combination of technical skills and creative problem-solving to every project I work on.",
-  imageUrl = "public/pp.jpg",
+  imageUrl = "character.webp",
   contactLink = "#contact",
 } = Astro.props;
 ---
 
-<section class="relative py-30 md:py-40 px-4 "> 
+<section class="relative pt-20 md:pt-40 lg:pt-40 2xl:pt-50 px-4 "> 
   <div class=" mx-auto max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     <!-- Left: Text Content -->
     <div class="text-center lg:text-left">
-      <p class="text-emerald-500 text-lg font-medium mb-2">Hi my name is</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-2">
+      <p class="text-green-800 text-lg 2xl:text-3xl font-medium mb-2">Hi my name is</p>
+      <h1 class="text-4xl md:text-5xl 2xl:text-6xl font-extrabold text-gray-900 dark:text-white mb-2">
         {name}
       </h1>
       <h2 class="text-2xl md:text-3xl font-semibold text-emerald-600 mb-4">
         {title}
       </h2>
-      <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+      <p class="text-gray-600 dark:text-gray-300 text-lg leading-6 mb-4">
         {description}
       </p>
       <a
@@ -49,7 +49,7 @@ const {
   </div>
 
   <!-- Scroll Indicator -->
-  <div class="mt-20 text-center">
+  <div class="mt-0 2xl:mt-20 text-center ">
     <p class="text-sm text-gray-400 mb-1">Scroll</p>
     <div class="text-gray-500 text-xl animate-bounce">
       <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
