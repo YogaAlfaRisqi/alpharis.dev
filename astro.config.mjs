@@ -1,10 +1,10 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
-import alpinejs from '@astrojs/alpinejs';
+import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,6 +12,13 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: vercel(),
-  integrations: [alpinejs()]
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    imagesConfig: {
+      sizes: [320, 640, 1280],
+    },
+  }),
+  integrations: [alpinejs()],
 });
